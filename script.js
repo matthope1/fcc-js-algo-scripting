@@ -1,16 +1,19 @@
-function whatIsInAName(collection, source) {
-    var arr = [];
-    // Only change code below this line
-  
-    collection.forEach(element => {
+function spinalCase(str) {
+  let newStr = '';
 
-    });
-  
-    // Only change code above this line
-    return arr;
+  for (let i = 0; i < str.length; i ++) {
+    if(str[i] == ' '){
+      newStr += '-';
+    }
+    else {
+      newStr += str[i].toLowerCase();
+    }
   }
+
+  return newStr;
+}
   
-const ans = whatIsInAName([{ "apple": 1, "bat": 2 }, { "bat": 2 }, { "apple": 1, "bat": 2, "cookie": 2 }], { "apple": 1, "bat": 2 });
+const ans = spinalCase('This Is Spinal Tap');
 
 console.log(ans);
-  
+

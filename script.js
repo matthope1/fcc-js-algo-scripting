@@ -45,5 +45,18 @@ const newStr = translatePigLatin("glove");
 
 
 function test () {
-  translatePigLatin("california")
+  translatePigLatin("california");
+  // aliforniacay
+  translatePigLatin("paragraphs");
+  //
+  translatePigLatin("glove");
+  //
+  translatePigLatin("algorithm");
+  //
+  translatePigLatin("eight");
+  //
+  translatePigLatin("schwartz");
+  //
+  translatePigLatin("rhythm");
+  //
 }

@@ -23,19 +23,27 @@ function translatePigLatin(str) {
       }
     }
     
-    let cluster = str.split(0,i);
-    let endOfString = str.split(i,strLen);
+    let cluster = str.slice(0,i);
+    let endOfString = str.slice(i,strLen);
 
     // move the letter or cluster to the end of the word
-
     // add ay to the end of the word
+    str = endOfString + cluster + "ay";
+
   }
   else {
     // if first letter is vowel
     // add way to the end of the word
+    str = str + "way";
   }
   
+  console.log(str);
   return str;
 }
 
-translatePigLatin("glove");
+const newStr = translatePigLatin("glove");
+
+
+function test () {
+  translatePigLatin("california")
+}

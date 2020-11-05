@@ -41,22 +41,30 @@ function translatePigLatin(str) {
   return str;
 }
 
-const newStr = translatePigLatin("glove");
 
-
-function test () {
+function test() {
+  console.log("This should be aliforniacay:");
   translatePigLatin("california");
   // aliforniacay
+  console.log("This should be aragraphspay:");
   translatePigLatin("paragraphs");
-  //
+  // aragraphspay
+  console.log("This should be oveglay:");
   translatePigLatin("glove");
-  //
+  // oveglay
+  console.log("This should be algorithmway:");
   translatePigLatin("algorithm");
-  //
+  //algorithmway
+  console.log("This should be eightway:");
   translatePigLatin("eight");
-  //
+  // eightway
+  console.log("This should be artzschway:");
   translatePigLatin("schwartz");
-  //
+  // artzschway
+  console.log("This should be rhythmay:");
   translatePigLatin("rhythm");
-  //
+  // rhythmay
 }
+
+
+test();

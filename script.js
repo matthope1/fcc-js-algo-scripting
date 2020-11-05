@@ -1,7 +1,5 @@
-
-const vowels = ["a", "e", "i", "o", "u"];
-
 function translatePigLatin(str) {
+  const vowels = ["a", "e", "i", "o", "u"];
   // use spread str into an array
 
   // get first letter
@@ -37,14 +35,13 @@ function translatePigLatin(str) {
     str = str + "way";
   }
   
-  console.log(str);
   return str;
 }
 
 
 function test() {
   console.log("This should be aliforniacay:");
-  translatePigLatin("california");
+  const ans = translatePigLatin("california");
   // aliforniacay
   console.log("This should be aragraphspay:");
   translatePigLatin("paragraphs");

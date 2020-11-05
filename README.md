@@ -1,2 +1,3 @@
-# Free code camp intermediate algorithm scripting 
+# Free code camp intermediate algorithm scripting solutions
+
 

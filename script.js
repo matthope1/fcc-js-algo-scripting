@@ -1,19 +1,8 @@
-function spinalCase(str) {
-  let newStr = '';
 
-  for (let i = 0; i < str.length; i ++) {
-    if(str[i] == ' '){
-      newStr += '-';
-    }
-    else {
-      newStr += str[i].toLowerCase();
-    }
-  }
+const consonants = ["a", "e", "i", "o", "u"];
 
-  return newStr;
+function translatePigLatin(str) {
+  return str;
 }
-  
-const ans = spinalCase('This Is Spinal Tap');
 
-console.log(ans);
-
+translatePigLatin("consonant");

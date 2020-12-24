@@ -1,24 +1,37 @@
-function whatIsInAName(collection, source) {
-    var arr = [];
-    // Only change code below this line
-  
-    for (let item in collection) {
-        // current object is collection[item]
-        for (let key in source) {
-            if (source[key] == collection[item][key]) {
-                arr.push(collection[item]);
-            }
-        }
-    }
+function isUpper(char) {
+    return char == char.toUpperCase();
+}
 
-    // Only change code above this line
-    return arr;
+function isCharacterALetter(char) {
+  return char.toLowerCase() != char.toUpperCase();
+}
+
+function spinalCase(str) {
+  let newStr = '';
+  let sep; 
+
+  for (let i = 0; i < str.length; i ++) {
+    if (!isCharacterALetter(str[i])) {
+      sep = str[i];
+      break;
+    }
   }
+
+  newStr = str.replace(sep,"-");
+
+  while (sep in str){
+    newStr = str.repalce(sep, "-");
+  }
+
+  return newStr;
+}
   
-let ans = whatIsInAName([{ "apple": 1, "bat": 2 }, { "bat": 2 }, { "apple": 1, "bat": 2, "cookie": 2 }], { "apple": 1, "bat": 2 }); 
-// should return [{ "apple": 1, "bat": 2 }, { "apple": 1, "bat": 2, "cookie": 2 }]; 
+const ans = spinalCase('This Is Spinal Tap');
 console.log(ans);
-  
+
+
+
+
 
 
 

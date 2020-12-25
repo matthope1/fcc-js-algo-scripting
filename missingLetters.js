@@ -15,4 +15,13 @@ function fearNotLetter(str) {
 
 let ans = fearNotLetter("stvwx");
 console.log(ans); 
-;
+
+
+// Given a string with a sequence of letters,
+
+// Find the missing letter in the sequence,
+
+// If there are no missing letters, return undefined
+
+
+

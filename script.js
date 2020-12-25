@@ -1,37 +1,17 @@
-function isUpper(char) {
-    return char == char.toUpperCase();
-}
+function fearNotLetter(str) {
+  let alphabet = "abcdefghijklmnopqrstuvwxyz";
+  let firstLetter = str[0];
+  let len = str.length;
 
-function isCharacterALetter(char) {
-  return char.toLowerCase() != char.toUpperCase();
-}
+  let startingPoint = alphabet.search(firstLetter);
 
-function spinalCase(str) {
-  let newStr = '';
-  let sep; 
-
-  for (let i = 0; i < str.length; i ++) {
-    if (!isCharacterALetter(str[i])) {
-      sep = str[i];
-      break;
+  for (let i = startingPoint; i < startingPoint + len + 1; i ++) {
+    if (! str.includes(alphabet[i])){
+      return alphabet[i];
     }
   }
-
-  newStr = str.replace(sep,"-");
-
-  while (sep in str){
-    newStr = str.repalce(sep, "-");
-  }
-
-  return newStr;
+  return undefined;
 }
-  
-const ans = spinalCase('This Is Spinal Tap');
-console.log(ans);
 
-
-
-
-
-
-
+let ans = fearNotLetter("stvwx");
+console.log(ans); 
